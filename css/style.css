@@ -119,7 +119,7 @@ header {
 #about-box2 {
   grid-area: box2;
   text-align: center;
-  border: 4px black dashed;
+  border: 6px black dashed;
 
   min-height: 700px;
 }
