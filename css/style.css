@@ -85,14 +85,12 @@ header {
 
 .container-about {
   display: grid;
-  grid-template-areas:
-    "top top top"
-    "box1 box2 box3";
+  grid-template-areas: "box1 box2 box3";
   grid-gap: 1rem;
+  padding-top: 5rem;
 }
 
 #social {
-  grid-area: top;
   text-align: center;
   font-size: 3rem;
 }
@@ -121,7 +119,7 @@ header {
 #about-box2 {
   grid-area: box2;
   text-align: center;
-  border: 4px black dashed;
+  border: 6px black dashed;
 
   min-height: 700px;
 }
