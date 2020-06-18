@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  background: url("../img/showcase2.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+
+.container {
+  margin: auto;
+  max-width: 1600px;
+}
+
+/* Header */
+
+header {
+  background-color: black;
+  opacity: 0.5;
+}
+
+.logo {
+  font-family: Great Vibes, sans-serif;
+  font-size: 4rem;
+  margin-top: 10px;
+}
+
+.logo a {
+  color: wheat;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar a {
+  text-decoration: none;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#navbar ul li {
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+#navbar ul li a {
+  text-align: center;
+  display: block;
+  color: wheat;
+  font-size: 2.5rem;
+  font-family: Great Vibes, sans-serif;
+  padding: 10px;
+}
+
+#navbar ul li a:hover {
+  background: wheat;
+  color: black;
+  border-radius: 50%;
+}
+
+#welcome {
+  color: wheat;
+  text-align: center;
+  padding-top: 10rem;
+  font-size: 3rem;
+  max-height: 100vh;
+}
+
+#welcome .logo {
+  font-size: 10rem;
+}
+
+#about {
+  background-color: wheat;
+  height: 100vh;
+}
+
+.container-about {
+  display: grid;
+  grid-template-areas:
+    "top top top"
+    "box1 box2 box3";
+  grid-gap: 1rem;
+}
+
+#social {
+  grid-area: top;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#social i {
+  margin-left: 1rem;
+  color: black;
+  font-size: 4rem;
+  border-radius: 10px;
+  transition: font-size 2s;
+}
+
+#social i:hover {
+  background: black;
+  color: wheat;
+  font-size: 5rem;
+}
+
+#about-box1 {
+  grid-area: box1;
+  min-height: 700px;
+  min-width: 500px;
+  background: url(../img/blin.jpg) no-repeat center center/cover;
+}
+
+#about-box2 {
+  grid-area: box2;
+  text-align: center;
+  border: 4px black dashed;
+
+  min-height: 700px;
+}
+
+#about-box2 h2 {
+  font-size: 3rem;
+}
+
+#about-box2 p {
+  font-size: 2rem;
+}
+
+#about-box3 {
+  grid-area: box3;
+  min-height: 700px;
+  min-width: 500px;
+  background: url(../img/icecream.jpg) no-repeat center center/cover;
+}
