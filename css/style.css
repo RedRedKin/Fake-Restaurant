@@ -4,6 +4,9 @@
   padding: 0;
 }
 
+body {
+  background-color: wheat;
+}
 #home {
   background: url("../img/showcase2.jpg") no-repeat center center/cover;
   height: 100vh;
@@ -78,9 +81,12 @@ header {
   font-size: 10rem;
 }
 
-#about {
+#about,
+#menu,
+#contact {
   background-color: wheat;
-  height: 100vh;
+  min-height: 100vh;
+  margin-top: 0;
 }
 
 .container-about {
@@ -137,4 +143,135 @@ header {
   min-height: 700px;
   min-width: 500px;
   background: url(../img/icecream.jpg) no-repeat center center/cover;
+}
+
+#menu h2 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.container-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  grid-gap: 1rem;
+}
+
+.menu-box {
+  min-height: 300px;
+  min-width: 100px;
+  background-color: wheat;
+}
+
+.menu-box-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.menu-box-1-pic {
+  background: url("../img/hamburger.jpg") no-repeat center center/cover;
+  height: 300px;
+}
+.menu-box-1-text {
+  text-align: center;
+}
+
+.menu-box-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.menu-box-2-pic {
+  background: url("../img/pizza.jpg") no-repeat center center/cover;
+  height: 300px;
+}
+.menu-box-2-text {
+  text-align: center;
+}
+.menu-box-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.menu-box-3-pic {
+  background: url("../img/pasta.jpg") no-repeat center center/cover;
+  height: 300px;
+}
+.menu-box-3-text {
+  text-align: center;
+}
+.menu-box-4 {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.menu-box-4-pic {
+  background: url("../img/pelmeni.jpg") no-repeat center center/cover;
+  height: 300px;
+}
+.menu-box-4-text {
+  text-align: center;
+}
+.menu-box-5 {
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.menu-box-5-pic {
+  background: url("../img/borshch.jpg") no-repeat center center/cover;
+  height: 300px;
+}
+.menu-box-5-text {
+  text-align: center;
+}
+
+#contact {
+  background-color: wheat;
+  min-height: 100vh;
+  margin-top: 0;
+  position: relative;
+}
+
+.container-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.map h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+iframe {
+  width: 790px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.location-information {
+  border: 6px black dashed;
+  height: 450px;
+  margin-top: 4rem;
+}
+
+.location-information h3,
+.location-information p {
+  font-size: 3rem;
+}
+
+#footer {
+  background-color: black;
+  color: wheat;
+  text-align: center;
+  min-height: 80px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
